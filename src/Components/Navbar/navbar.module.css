@@ -1,0 +1,36 @@
+header {
+    background-color: #2E7BA2;
+    display: flex;
+    align-items: center;
+    height: 128px;
+    justify-content: space-around;
+    position: relative;
+}
+
+header img {
+    width: 234px;
+}
+
+
+.list {
+    list-style: none;
+    color: #FFFFFF;
+    position: absolute;
+    width: 193px;
+    background-color: #2E7BA2;
+    top: 128px;
+    right: -193px;
+
+
+}
+
+header nav button .open {
+    right: 0 !important;
+}
+
+.itens {
+    font-family: 'Raleway', sans-serif;
+    padding: 16px;
+    gap: 8px;
+    text-align: center;
+}
