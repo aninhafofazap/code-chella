@@ -20,13 +20,19 @@ header {
       list-style: none;
       color: #ffffff;
 
+      a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 700;
+      }
+
       li {
         font-family: "Raleway", sans-serif;
         padding: 16px;
         gap: 8px;
         text-align: center;
-        border: 1px solid #ffffff;
-        transform: rotate(-0.39deg);
+        border-bottom: 1px solid #FFFFFF;
+
       }
     }
   }
@@ -36,4 +42,52 @@ header {
   left: 60%;
   padding: 200px;
   background: red;
+}
+
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: column;
+
+    svg {
+      display: none;
+    }
+
+    nav {
+      position: initial;
+      width: 100%;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 32px;
+    }
+
+    li {
+      padding: 0 16px;
+      font-size: 20px;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  header {
+    flex-direction: row;
+
+
+    nav {
+      ul {
+        align-items: center;
+        padding: 0;
+
+        li {
+          padding: 0;
+        }
+      }
+    }
+  }
 }

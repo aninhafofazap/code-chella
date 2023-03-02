@@ -5,6 +5,7 @@ import { RiCloseFill } from "react-icons/ri";
 import { useState } from "react";
 
 function Navbar() {
+  // Resolver questao do menu no mobile assim que terminar a construção da pagina inicial.
   const [open, setOpen] = useState(false);
 
   function handleOpenMenu() {
@@ -27,10 +28,18 @@ function Navbar() {
       )}
       <nav>
         <ul>
-          <li>A experiência</li>
-          <li>Mapa de setores</li>
-          <li>Informações</li>
-          <li>Ingresso</li>
+          <li>
+            <a href="">A experiência</a>
+          </li>
+          <li>
+            <a href="">Mapa de setores</a>
+          </li>
+          <li>
+            <a href="">Informações</a>
+          </li>
+          <li>
+            <a href="">Ingresso</a>
+          </li>
         </ul>
       </nav>
     </header>
