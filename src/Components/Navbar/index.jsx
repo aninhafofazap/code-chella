@@ -1,27 +1,36 @@
 import logo from "../../Assets/Images/Logo1.png";
-import styles from "./navbar.module.css";
+import styles from "./navbar.module.scss";
 import { BsList } from "react-icons/bs";
+import { RiCloseFill } from "react-icons/ri";
+import { useState } from "react";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  function handleOpenMenu() {
+    const navbar = document.querySelector("nav");
+    setOpen((open) => !open);
+    navbar?.classList.toggle("abresaporra");
+  }
+
   return (
     <header>
       <img src={logo} alt="Logo" />
-      <nav className={styles.container}>
-        <BsList
+      {open ? (
+        <RiCloseFill
           size={32}
           color={"#FFFFFF"}
-          onClick={() => {
-            const open = document.querySelector("header nav ul");
-            console.log(open, "oi");
-            open.classList.add("open");
-            console.log(open);
-          }}
+          onClick={() => handleOpenMenu()}
         />
-        <ul className={styles.list}>
-          <li className={styles.itens}>A experiência</li>
-          <li className={styles.itens}>Mapa de setores</li>
-          <li className={styles.itens}>Informações</li>
-          <li className={styles.itens}>Ingresso</li>
+      ) : (
+        <BsList size={32} color={"#FFFFFF"} onClick={() => handleOpenMenu()} />
+      )}
+      <nav>
+        <ul>
+          <li>A experiência</li>
+          <li>Mapa de setores</li>
+          <li>Informações</li>
+          <li>Ingresso</li>
         </ul>
       </nav>
     </header>

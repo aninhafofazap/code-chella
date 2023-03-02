@@ -32,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  background: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+  background-repeat: no-repeat;
 }
 
 ol, ul {

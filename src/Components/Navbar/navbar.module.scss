@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #2e7ba2;
+  height: 128px;
+  position: relative;
+
+  img {
+    width: 234px;
+  }
+
+  nav {
+    background-color: #2e7ba2;
+    position: absolute;
+    left: 100%;
+    top: 128px;
+
+    ul {
+      list-style: none;
+      color: #ffffff;
+
+      li {
+        font-family: "Raleway", sans-serif;
+        padding: 16px;
+        gap: 8px;
+        text-align: center;
+        border: 1px solid #ffffff;
+        transform: rotate(-0.39deg);
+      }
+    }
+  }
+}
+
+.abresaporra {
+  left: 60%;
+  padding: 200px;
+  background: red;
+}
