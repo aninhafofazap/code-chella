@@ -6,7 +6,9 @@ function About() {
   return (
     <div className={styles.about}>
       <img src={imagem} />
-      <h2 className={styles.title}>11 e 12 de Março Aluródromo de São Paulo</h2>
+      <h2 className={styles.title}>
+        &lt;11 e 12 de Março&gt; Aluródromo de São Paulo
+      </h2>
       <p className={styles.description}>
         Hora de programar nossa memória com novas lembranças! Uma nova
         experiência sobre música, linguagens e, claro, tecnologia! Somos um
