@@ -56,19 +56,20 @@ header {
     nav {
       position: initial;
       width: 100%;
-    }
 
-    ul {
-      display: flex;
-      justify-content: space-evenly;
-      padding-bottom: 32px;
-    }
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 32px;
+      }
 
-    li {
-      padding: 0 16px;
-      font-size: 20px;
-      color: #FFFFFF;
-      font-weight: 700;
+      li {
+        padding: 0 16px;
+        font-size: 20px;
+        color: #FFFFFF;
+        font-weight: 700;
+        border-color: transparent !important;
+      }
     }
   }
 }
